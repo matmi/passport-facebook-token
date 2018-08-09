@@ -129,6 +129,7 @@ export default class FacebookTokenStrategy extends OAuth2Strategy {
         const profile = {
           provider: 'facebook',
           id: json.id,
+          username: json.id,
           displayName: json.name || '',
           name: {
             familyName: json.last_name || '',
